@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping("/api")
 public class CalculatorController {
 
-    @PostMapping("/calculate")
+    @PostMapping("/calculate/pbt")
     public ResponseEntity<Double> calculate(@RequestBody Request request) {
         return ResponseEntity.ok(Calculator.PBT(request));
     }
